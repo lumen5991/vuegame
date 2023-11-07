@@ -1,12 +1,15 @@
 <template>
     <div class="container my-5 pt-3 shadow" style="width: 500px;">
+      <div class="d-flex align-item-center justify-content-center" style="color: #5706F1">
+      <h2>Merci de vérifier votre compte</h2>
+    </div>
       <form @submit.prevent="verifyCode">
         <!-- Affichez des messages d'erreur ou de succès -->
         <div v-if="error" class="alert alert-danger">{{ error }}</div>
         <div v-if="successMessage" class="alert alert-success">{{ successMessage }}</div>
   
         <div class="form-group">
-          <label for="verificationCode">Nom d'utilisateur</label>
+          <label for="verificationCode">Veuillez renseigner le code de vérification :</label>
           <input type="text" id="verificationCode" v-model="verificationCode" class="form-control" />
         </div>
         <button  class="btn btn-primary my-3" style="width: 100%;">Valider</button>

@@ -2,7 +2,7 @@
 </script>
 <template>
     <div class="d-flex justify-content-center align-items-center min-vh-100">
-      <div class="container p-4 rounded shadow" style="width: 1000px;">
+      <div class="container p-4 rounded shadow" >
         <div class="row">
           <div class="col-lg-6" >
             <h2 style="font-size: 36px;">Bienvenue sur <span style="color: rgb(74, 171, 184);">Flinmi</span></h2>

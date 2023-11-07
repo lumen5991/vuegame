@@ -1,7 +1,10 @@
 <template>
   <div class="container my-5 pt-3 shadow" style="width: 500px;">
+    <div class="d-flex align-item-center justify-content-center" style="color: #5706F1">
+      <h2>Inscription</h2>
+    </div>
     <form @submit.prevent="createUser">
-      <!-- Affichez des messages d'erreur ou de succès -->
+     
       <div v-if="error" class="alert alert-danger">{{ error }}</div>
       <div v-if="successMessage" class="alert alert-success">{{ successMessage }}</div>
 
@@ -27,7 +30,7 @@ import { ref } from 'vue';
 import { clientHttp } from "../libs/clientHttp";
 import { useRouter } from 'vue-router';
 
-import bcrypt from 'bcryptjs';
+
 
 const username = ref('');
 const email = ref('');

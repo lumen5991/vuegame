@@ -4,7 +4,7 @@
       <div class="row justify-content-center">
         <div class="col-md-6">
           <div class="card">
-            <div class="card-header">Connexion</div>
+            <div class="card-header" style="color: #5706F1">Connexion</div>
             <div class="card-body">
               <form @submit.prevent="login">
                 <div class="mb-3">
@@ -56,15 +56,14 @@ const login = async () => {
 
     const { accessToken, refreshToken } = response.data;
 
-    // Stockez le token d'authentification dans le localStorage
     localStorage.setItem('accessToken', accessToken);
     localStorage.setItem('refreshToken', refreshToken);
     localStorage.setItem('email', email.value);
 
-    // Redirigez l'utilisateur vers la page "/game" après une connexion réussie
+   
     router.push('/game');
 
-    // Définissez un message de succès
+   
     successMessage.value = "Connexion réussie ! Redirection vers la page /game...";
   } 
   catch (error) {
