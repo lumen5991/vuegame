@@ -30,7 +30,7 @@
 <script setup>
 import axios from 'axios';
 import { ref } from 'vue';
-import { clientHttp } from "../libs/clientHttp";
+import  clientHttp from "@/libs/clientHttp";
 import { useRouter } from 'vue-router';
 
 const email = ref('');
