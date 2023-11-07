@@ -37,7 +37,7 @@
 
 <script setup lang="ts">
 import Navbar from '@/components/Navbar.vue';
-import { clientHttp } from "../libs/clientHttp";
+import { clientHttp } from "@/libs/clientHttp";
 import { ref, onMounted, watch } from "vue"
 
 
