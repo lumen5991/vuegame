@@ -17,12 +17,11 @@
     </div>
   </template>
   
-  <script setup>
+  <script setup lang="ts">
   import { ref } from 'vue';
   import  clientHttp from "@/libs/clientHttp";
   import { useRouter } from 'vue-router';
   
-  import bcrypt from 'bcryptjs';
   
   const verificationCode = ref('');
   const error = ref('');
