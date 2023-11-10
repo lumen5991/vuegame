@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const clientHttp = axios.create({
-  baseURL: "http://localhost:3000/api",
+  baseURL: "https://vercel.com/lumens-projects/nodegame.vercel.app",
 });
 
 export default clientHttp;
